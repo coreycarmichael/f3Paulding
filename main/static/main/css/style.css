@@ -1,0 +1,56 @@
+/* Custom styles for F3 Paulding website */
+
+/* Navbar customization */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Jumbotron customization */
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+/* Card customization */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Image container */
+.img-container {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Custom button styles */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+}
+
+/* Contact form styles */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+.alert {
+    margin-bottom: 1rem;
+}
+
+.text-danger {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+} 

@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %}
+{% block title %}Paulding Region | F3 Paulding{% endblock %}
+
+{% block content %}
+<div class="py-5 text-center">
+    <h1 class="fw-bold">F3 Paulding Region</h1>
+    <p class="lead">Come join us in the gloom. Rain or shine.</p>
+</div>
+
+<div class="row g-4 mb-5">
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-primary">
+            <div class="card-body">
+                <h5 class="card-title text-primary">The Vet</h5>
+                <p class="card-text">
+                    📍 <strong>Tuesdays & Thursdays</strong><br>
+                    🕔 <strong>5:00 AM</strong><br>
+                    🗺️ <em>Veterans Memorial Park</em><br>
+                    <strong>240 Constitution Blvd, Dallas, GA 30132</strong><br>
+                    <br>
+                    A blend of strength, cardio, and grit at a public park that honors our veterans.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-success">
+            <div class="card-body">
+                <h5 class="card-title text-success">The Brewery</h5>
+                <p class="card-text">
+                    📍 <strong>Mondays, Wednesdays & Fridays</strong><br>
+                    🕔 <strong>5:00 AM</strong><br>
+                    🗺️ <em>Seven Hills Brewery</em><br>
+                    <strong>76 Seven Hills Blvd #105, Dallas, GA 30132</strong><br>
+                    <br>
+                    Creative beatdowns with a brotherhood twist — start your mornings strong.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card h-100 shadow-sm border-dark mt-4">
+            <div class="card-body">
+                <h5 class="card-title text-dark">The Outpost (with F3 West Cobb)</h5>
+                <p class="card-text">
+                    📍 <strong>Saturdays</strong><br>
+                    🕡 <strong>6:30 AM</strong><br>
+                    🗺️ <em>West Ridge Church</em><br>
+                    <strong>3522 Hiram Acworth Hwy, Dallas, GA 30157</strong><br>
+                    <br>
+                    Join our neighboring region for a Saturday convergence and solid fellowship.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light p-5 rounded text-center">
+    <h2 class="mb-3">Just Show Up</h2>
+    <p class="mb-4">Rain or shine, we’re out there. Bring a water bottle. No experience needed — we’ll handle the rest.</p>
+    <a href="{% url 'contact' %}" class="btn btn-outline-dark btn-lg">Let us know you're coming!</a>
+</div>
+{% endblock %}

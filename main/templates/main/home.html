@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+{% block title %}Home | F3 Paulding{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold">Welcome to F3 Paulding</h1>
+    <p class="lead">Fitness • Fellowship • Faith</p>
+</div>
+
+<div class="row text-center g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Fitness <i class="fas fa-dumbbell"></i></h5>
+                <p class="card-text">Free, outdoor peer-led workouts held rain or shine, heat or cold.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Fellowship</h5>
+                <p class="card-text">We're building a strong brotherhood through shared experiences and support.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Faith</h5>
+                <p class="card-text">Not one specific religion, but a belief in something bigger than ourselves.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="bg-light p-5 rounded text-center">
+    <h2 class="mb-3">Find Your Purpose. Join Us in the Gloom.</h2>
+    <p class="mb-4">F3 Paulding is expanding and you're invited. No sign-up. No cost. Just show up.</p>
+    <a href="{% url 'paulding_region' %}" class="btn btn-primary btn-lg">View AO Locations</a>
+</div>
+{% endblock %}
