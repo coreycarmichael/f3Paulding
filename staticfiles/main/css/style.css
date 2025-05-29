@@ -34,4 +34,23 @@
 .btn-primary:hover {
     background-color: #004494;
     border-color: #004494;
+}
+
+/* Contact form styles */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+.alert {
+    margin-bottom: 1rem;
+}
+
+.text-danger {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
 } 
