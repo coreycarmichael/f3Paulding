@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 from .forms import ContactForm
+import traceback  # Add this import
 
 # Create your views here.
 
@@ -49,7 +50,9 @@ def contact(request):
                 messages.success(request, 'Thank you for your interest! We will contact you soon.')
                 form = ContactForm()  # Reset form after successful submission
             except Exception as e:
-                messages.error(request, 'There was an error sending your message. Please try again later.')
+                print(f"Email error: {str(e)}")  # Print error to console
+                print(traceback.format_exc())  # Print full traceback
+                messages.error(request, f'There was an error sending your message: {str(e)}')
     else:
         form = ContactForm()
     
