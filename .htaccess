@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /passenger_wsgi.py/$1 [QSA,L]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect database file
+<Files "db.sqlite3">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Protect environment file
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files> 

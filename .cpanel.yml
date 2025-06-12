@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dfrpicje/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .env $DEPLOYPATH
+    - /bin/cp -R .htaccess $DEPLOYPATH
+    - /bin/cp -R passenger_wsgi.py $DEPLOYPATH
+    - /bin/cp -R requirements.txt $DEPLOYPATH
+    - /bin/cp -R manage.py $DEPLOYPATH
+    - /bin/cp -R db.sqlite3 $DEPLOYPATH
+    - /bin/cp -R f3PauldingWebsite $DEPLOYPATH
+    - /bin/cp -R main $DEPLOYPATH
+    - /bin/cp -R staticfiles $DEPLOYPATH 
