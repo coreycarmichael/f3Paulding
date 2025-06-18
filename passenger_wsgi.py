@@ -7,7 +7,7 @@ from django.core.wsgi import get_wsgi_application
 sys.path.insert(0, os.path.dirname(__file__))
 
 # Set the Django settings module
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'f3PauldingWebsite.settings')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'f3PauldingWebsite.settings'
 
 # Get the WSGI application
 application = get_wsgi_application() 
