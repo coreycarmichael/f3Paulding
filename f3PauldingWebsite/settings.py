@@ -33,6 +33,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'f3paulding.com',
     'www.f3paulding.com',
+    'f3pauldingwebsite.onrender.com',
     'localhost',
     '127.0.0.1',
 ]
